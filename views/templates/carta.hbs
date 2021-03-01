@@ -1,0 +1,16 @@
+<p>Mostraremos la carta completa obtenida de la BDD</p>
+
+<main>
+    <section class="platosLista">
+        {{#each listado}}
+            <ul>    
+                <li>Nombre: {{this.nombre}}</li>
+                <li>Comensales: {{comensales}}</li>
+                <li>Alérgenos: {{alergenos}}</li>
+                <li>Ingredientes: {{ingredientes}}</li>
+                <li>Precio: {{precio}} €</li>
+                <li>Categoría: {{categoria}} €</li>
+            </ul>
+        {{/each}}
+    </section>
+</main>

@@ -1,0 +1,53 @@
+
+<form action="/nuevo-plato" method="post" id="formNewPlato">
+    <fieldset>
+        <legend>Datos del nuevo plato</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input  type="text" id="nombre" name="nombre" placeholder="Nombre del nuevo plato" autofocus>
+
+        <label for="comensales">Apto para compartir entre:</label>
+        <input type="number" id="comensales" name="comensales" placeholder="nº comensales">
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" form="formNewPlato">
+            <option value="">--Elija una opción--</option>
+            <option value="Platos de cuchara">Platos de cuchara</option>
+            <option value="Tapas">Tapas</option>
+            <option value="Carnes">Carnes</option>
+            <option value="Postres">Postres</option>
+        </select>
+
+    </fieldset>
+    <fieldset>
+        <legend>Alérgenos</legend>
+        <div id="alergenos-checkbox">
+        <input type="checkbox" name="alergenos" id="gluten" value="gluten"><label for="gluten"> Gluten</label>
+        <input type="checkbox" name="alergenos" id="lácteos" value="lácteos"><label for="lacteos"> Lácteos</label>
+        <input type="checkbox" name="alergenos" id="huevo" value="huevo"><label for="huevo"> Huevo</label>
+        <input type="checkbox" name="alergenos" id="altramuces" value="altramuces"><label for="altramuces"> Altramuces</label>
+        <input type="checkbox" name="alergenos" id="frutos-cascara" value="frutos de cáscara"><label for="frutos-cascara"> Frutos de cáscara</label>
+        <input type="checkbox" name="alergenos" id="cacahuetes" value="cacahuetes"><label for="cacahuetes"> Cacahuetes</label>
+        <input type="checkbox" name="alergenos" id="crustaceos" value="crustáceos"><label for="crustaceos"> Crustáceos</label>
+        <input type="checkbox" name="alergenos" id="moluscos" value="moluscos"><label for="moluscos"> Moluscos</label>
+        <input type="checkbox" name="alergenos" id="pescado" value="pescado"><label for="pescado"> Pescado</label>
+        <input type="checkbox" name="alergenos" id="apio" value="apio"><label for="apio"> Apio</label>
+        <input type="checkbox" name="alergenos" id="mostaza" value="mostaza"><label for="mostaza"> Mostaza</label>
+        <input type="checkbox" name="alergenos" id="sesamo" value="sésamo"><label for="sesamo"> Sésamo</label>
+        <input type="checkbox" name="alergenos" id="soja" value="soja"><label for="soja"> Soja</label>
+        <input type="checkbox" name="alergenos" id="sulfitos" value="sulfitos"><label for="sulfitos"> Sulfitos</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Venta</legend>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" placeholder="P.V.P.">
+        <input type="checkbox" name="disponibilidad" id="disponibilidad" value="true" checked><label for="disponibilidad"> Disponibilidad</label>
+
+
+    </fieldset>
+
+    <button id="btnForm" type="submit" value="Crear plato">Crear nuevo plato</button> 
+</form>
+
+

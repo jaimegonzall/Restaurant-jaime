@@ -1,0 +1,17 @@
+{{!-- 
+Este partial va incrustado al final de cada artículo.
+Sus datos se determinan en las rutas.
+--}}
+
+<h3>Comentarios</h3>
+<i>Sección mostrada a través de un partial</i>
+{{!-- si hay comentarios los muestro en bucle --}}
+{{#if comments}}
+    <ul> {{!-- bucle para mostrarlos --}}
+        {{#each comments}}<li><b>{{this.author}}:</b> {{this.texto}}</li>{{/each}}
+    </ul>
+    {{else}}
+    <ul> {{!-- si no hay comentarios muestro esta sección --}}
+        <li>Todavía no hay comentarios</li>
+    </ul>
+{{/if}}

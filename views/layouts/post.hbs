@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>{{metaTitle}} ::: Mi proyecto</title>
+</head>
+<body>
+
+{{!-- Layout a fullpage --}}
+
+    {{>nav}}
+
+       <h1>{{pageTitle}}</h1>
+
+       {{!-- cuerpo de la página --}}
+       {{{body}}}
+<hr>
+<ul>
+    <li>Meta title: {{meta.metaTitle}}</li>
+    <li>Un artículo de: {{meta.author}}</li>
+    <li>Etiquetas:{{#each meta.tags}} {{this}},{{/each}}.</li>
+</ul>
+<img src="{{meta.featuredImage}}" alt="{{meta.metaTitle}}">
+<hr>
+
+{{>comments}}
+
+{{!-- Los comentarios se muestran a través de un partial,
+y recoge los datos de la ruta perfectamente. --}}
+
+<hr>
+<p><i>Post layout</i></p>
+<hr>
+
+
+{{>aside}}
+
+{{>footer}}
+</body>
+</html>

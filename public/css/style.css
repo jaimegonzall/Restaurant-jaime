@@ -1,0 +1,62 @@
+*{	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+	}
+
+hr{
+    border: 1px solid silver;
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    justify-content: space-evenly;
+    border-bottom: 1px solid darkblue;
+    margin-bottom: 30px;
+}
+
+aside {
+    background-color: lightcyan;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    background-color: lightgreen;
+    width: 100%;
+    font-size: 0.7em;
+}
+
+
+#formNewPlato fieldset{
+    border: 1px solid darkseagreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+input, select{
+    border: 1px solid silver;
+}
+
+button{
+    background-color: darkseagreen;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+#alergenos-checkbox{
+    display: grid;
+    grid-template-columns: 25px auto 25px auto;
+    grid-gap: 5px;
+}
