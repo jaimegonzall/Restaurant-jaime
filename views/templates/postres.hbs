@@ -1,4 +1,3 @@
-<p>Mostraremos la carta completa obtenida de la BDD</p>
 <hr>
 <main>
     <section class="platosLista">
@@ -11,7 +10,15 @@
                 <li>Comensales: {{comensales}}</li>
                 <li>Precio: {{precio}} €</li>
                 <li>Disponibilidad: {{disponibilidad}}</li>
-            </ul><hr>
+            </ul>
+
+            <button id="btnEdit">Editar plato</button>
+
+            <form action="/delete/{{_id}}" method="GET">
+                <button type="submit" id="btnDelete">Eliminar</button>
+            </form> {{!-- sin terminar --}}
+
+            <hr>
         {{/each}}
     </section>
 </main>

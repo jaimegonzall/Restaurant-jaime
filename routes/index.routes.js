@@ -40,9 +40,12 @@ router.get('/articulo-blog', (req, res) => {
     ); 
 });
 
-// página para MOSTRAR los platos
-router.get('/carta', async (req, res) => {
-    const platos = await platoController.renderPlatos;
+// MOSTRAR los platos
+
+router.get('/carta', platoController.list);
+
+/*  router.get('/carta', async (req, res) => {
+    const platos = await platoController.list;
     console.log(platos);
     res.render('templates/carta', {
         pageTitle: 'Lista de platos',
@@ -51,8 +54,9 @@ router.get('/carta', async (req, res) => {
     }
     
     );
-}); 
+});   */
 
+router.get('/carta/postres', platoController.postres);
 
 // CREAR PLATO
 
